@@ -1,0 +1,78 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.RoomList.EditModel
+<br />
+<h2 class="text-info">Edit Room</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="Room.Id" />
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.Capacity"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.Capacity" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.Capacity" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.TypeId"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.TypeId" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.TypeId" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.isFree"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.isFree" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.isFree" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.PriceForBedAsAdult"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.PriceForBedAsAdult" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.PriceForBedAsAdult" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.PriceForBedAsChild"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.PriceForBedAsChild" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.PriceForBedAsChild" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Room.Number"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Room.Number" class="form-control" />
+            </div>
+            <span asp-validation-for="Room.Number" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="RoomList/Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+ 

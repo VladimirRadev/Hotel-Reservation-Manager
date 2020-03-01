@@ -1,0 +1,81 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.ClientList.IndexModel
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info text-secondary">Client List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-controller="Clients" asp-action="Create" class="btn btn-info form-control text-white">Create Client</a>
+    </div>
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            @if (Model.Clients.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Clients.FirstOrDefault().Firstname"></label>
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)*@
+                            <label asp-for="Clients.FirstOrDefault().Lastname"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Clients.FirstOrDefault().Email"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Clients.FirstOrDefault().PhoneNumber"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Clients.FirstOrDefault().isAdult"></label>
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                    @foreach (var item in Model.Clients)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => item.Firstname)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.Lastname)
+                            </td>
+                            <td>
+                                @if (item.isAdult)
+                                {
+                                    <h1 Yes></h1>
+                                }
+                                else
+                                {
+                                    <h1 No></h1>
+                                }
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.PhoneNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.Email)
+                            </td>
+                            <td>
+                                @if (this.User.IsInRole("Admin"))
+                                {
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                                    <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>No clients available.</p>
+            }
+        </form>
+    </div>
+</div>

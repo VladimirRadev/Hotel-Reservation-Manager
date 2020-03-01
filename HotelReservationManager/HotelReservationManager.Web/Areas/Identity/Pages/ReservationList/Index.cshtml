@@ -1,0 +1,111 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.ReservationList.IndexModel
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Reservation List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-controller="Reservations" asp-action="Create" class="btn btn-info form-control text-white">Make Reservation</a>
+    </div>
+
+
+    <div class="col-13 border p-1 mt-auto">
+        <form method="post">
+            @if (Model.Reservations.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().RoomId"></label>
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)*@
+                            <label asp-for="Reservations.FirstOrDefault().HotelUserId"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().Clients"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().DataOfIncoming"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().DateOfOutgoing"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().allInclusive"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().includedBreakfast"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Reservations.FirstOrDefault().AllAmount"></label>
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                    @foreach (var item in Model.Reservations)
+                    {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(m => item.RoomId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.HotelUserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Clients)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.DataOfIncoming)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.DateOfOutgoing)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.HotelUserId)
+                    </td>
+                    <td>
+                        @if (item.allInclusive)
+                        {
+                            <h1 Yes></h1>
+                        }
+                        else
+                        {
+                            <h1 No></h1>
+                        }
+                    </td>
+                    <td>
+                        @if (item.includedBreakfast)
+                        {
+                            <h1 Yes></h1>
+                        }
+                        else
+                        {
+                            <h1 No></h1>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.AllAmount)
+                    </td>
+                    <td>
+                        @if (this.User.IsInRole("Admin"))
+                        {
+                            <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                            <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                        }
+                    </td>
+                </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>No reservation available.</p>
+            }
+        </form>
+    </div>
+</div>

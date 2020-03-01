@@ -1,0 +1,13 @@
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.deps.json
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.pdb
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.csprojAssemblyReference.cache
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.AssemblyInfoInputs.cache
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.AssemblyInfo.cs
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.pdb
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.Models.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.Models.pdb
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\obj\Debug\netcoreapp3.1\HotelReservationManager.Web.Models.csproj.CopyComplete
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Web.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.pdb

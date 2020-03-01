@@ -1,0 +1,11 @@
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.deps.json
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.csprojAssemblyReference.cache
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.AssemblyInfoInputs.cache
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.AssemblyInfo.cs
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.Models.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.pdb
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.Models.pdb
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.csproj.CopyComplete
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.dll
+D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data\obj\Debug\netcoreapp3.1\HotelReservationManager.Data.pdb

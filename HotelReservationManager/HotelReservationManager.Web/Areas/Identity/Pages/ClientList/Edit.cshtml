@@ -1,0 +1,68 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.ClientList.EditModel
+<br />
+<h2 class="text-info">Edit Client</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="Client.Id" />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Client.Firstname"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Client.Firstname" class="form-control" />
+            </div>
+            <span asp-validation-for="Client.Firstname" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Client.Lastname"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Client.Lastname" class="form-control" />
+            </div>
+            <span asp-validation-for="Client.Lastname" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Client.PhoneNumber"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Client.PhoneNumber" class="form-control" />
+            </div>
+            <span asp-validation-for="Client.PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Client.Email"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Client.Email" class="form-control" />
+            </div>
+            <span asp-validation-for="Client.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Client.isAdult"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Client.isAdult" class="form-control" />
+            </div>
+            <span asp-validation-for="Client.isAdult" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="ClientList/Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    }

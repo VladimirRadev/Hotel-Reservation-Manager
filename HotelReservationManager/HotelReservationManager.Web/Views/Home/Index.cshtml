@@ -1,0 +1,35 @@
+﻿<div class="jumbotron mt-3 hotel-bg-color bg-light">
+    @if (this.User.IsInRole("Admin"))
+    {
+        <h1>Good day admin!</h1>
+        <hr class="bg-dark" />
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/UserList/Index">All Users</a> if you want to create a new user or see all users(with edit and delete).</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/ClientList/Index">All Clients</a> if you want to create a new client of hotel or see all clients(with edit and delete).</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/RoomList/Index">All Rooms</a> if you want to create a new room of hotel or see all rooms(with edit and delete).</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/ReservationList/Index">All Reservations</a> if you want to make a reservation or see all reservations(with edit and delete).</h3>
+
+    }
+    else if (this.User.IsInRole("User"))
+    {
+        <h1>Enjoy your work today!</h1>
+        <hr class="bg-dark" />
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/ClientList/Index">All Clients</a> if you want to create a new client of hotel or see all clients(with edit and delete).</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/RoomList/Index">All Rooms</a> if you want to create a new room of hotel or see all rooms(with edit and delete).</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/ReservationList/Index">All Reservations</a> if you want to make a reservation or see all reservations(with edit and delete).</h3>
+
+
+    }
+    else if (this.User.IsInRole("Client"))
+    {
+        <h1>You are fired, get out!</h1>
+        <hr class="bg-dark" />
+    }
+    else
+    {
+        <h1>Welcome to Hotel Reservation Manager!</h1>
+        <hr class="bg-dark" />
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/Account/Login">Login</a> if you have an existing account.</h3>
+        <h3><a class="nav-link-dark text-primary" asp-area="Identity" asp-page="/Account/Register">Register</a> if you want to create a new account.</h3>
+    }
+
+</div>

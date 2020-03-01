@@ -1,0 +1,72 @@
+﻿@model RoomCreateBindingModel
+<div class="mt-3 mb-5">
+    <h1 class="text-center text-primary">Create Room</h1>
+    <hr class="bg-secondary half-width hr-2" />
+    <form class="mx-auto half-width" method="post" asp-controller="Rooms" asp-action="Create">
+        <div class="form-group">
+            <label asp-for="Capacity">Capacity of room</label>
+            <input type="number" class="form-control" id="capacity" placeholder="Capacity of room..." asp-for="Capacity">
+            <span asp-validation-for="Capacity" class="text-danger"></span>
+        </div>
+        <div>
+            <h4 class="text-center text-secondary">Room Type</h4>
+            <hr class="hr-2 bg-secondary w-75  mt-3" />
+            <div class="type-holder mt-3 d-flex justify-content-lg-around">
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="Type" id="twosinglebeds" value="Two single beds">
+                    <label class="form-check-label" asp-for="Type">Two single beds</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="Type" id="apartment" value="Apartment">
+                    <label class="form-check-label" asp-for="Type">Apartment</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="Type" id="doublebed" value="Double bed">
+                    <label class="form-check-label" asp-for="Type">Double bed</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="Type" id="penthouse" value="Penthouse">
+                    <label class="form-check-label" asp-for="Type">Penthouse</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="Type" id="mezonet" value="Mezonet">
+                    <label class="form-check-label" asp-for="Type">Mezonet</label>
+                </div>
+            </div>
+            <hr class="hr-2 bg-dark w-75 mt-3" />
+        </div>
+        <div>
+            <h4 class="text-center text-secondary">IsFree?</h4>
+            <hr class="hr-2 bg-secondary w-75  mt-3" />
+            <div class="free-holder mt-3 d-flex justify-content-lg-around">
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="isfree" id="yes" value="true">
+                    <label class="form-check-label" asp-for="isFree">Yes</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="isfree" id="no" value="false">
+                    <label class="form-check-label" asp-for="isFree">No</label>
+                </div>
+            </div>
+            <hr class="hr-2 bg-dark w-75 mt-3" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PriceForAdult">PriceForAdult</label>
+            <input type="number" class="form-control" id="priceforadult" placeholder="Price For Adult..." asp-for="PriceForAdult">
+            <span asp-validation-for="PriceForAdult" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PriceForChild">PriceForChild</label>
+            <input type="number" class="form-control" id="priceforchild" placeholder="Price For Child..." asp-for="PriceForChild">
+            <span asp-validation-for="PriceForChild" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Number">Number</label>
+            <input type="number" class="form-control" id="number" placeholder="Number..." asp-for="Number">
+            <span asp-validation-for="Number" class="text-danger"></span>
+        </div>
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn hotel-bg-color text-white bg-primary">Create</button>
+        </div>
+    </form>
+</div>

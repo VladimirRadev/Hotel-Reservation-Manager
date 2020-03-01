@@ -1,0 +1,98 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.UserList.IndexModel
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">User List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-info form-control text-white">Create User</a>
+    </div>
+
+
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            @if (Model.HotelUsers.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().UserName"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().Firstname"></label>
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)*@
+                            <label asp-for="HotelUsers.FirstOrDefault().Lastname"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().Middlename"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().PersonalInditification"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().DateOfEmployed"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().Isactive"></label>
+                        </th>
+                        <th>
+                            <label asp-for="HotelUsers.FirstOrDefault().Dateofleavingcompany"></label>
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                    @foreach (var item in Model.HotelUsers)
+                    {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(m => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Firstname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Middlename)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.PersonalInditification)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.DateOfEmployed)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Dateofleavingcompany)
+                    </td>
+                    <td>
+                        @if (item.Isactive)
+                        {
+                            <h1 Yes></h1>
+                        }
+                        else
+                        {
+                            <h1 No></h1>
+                        }
+                    </td>
+                    <td>
+                        <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                        <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                    </td>
+                </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>No users available.</p>
+            }
+        </form>
+    </div>
+</div>

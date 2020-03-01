@@ -1,0 +1,92 @@
+﻿@page
+@model HotelReservationManager.Web.Areas.Identity.Pages.UserList.EditModel
+<br />
+<h2 class="text-info">Edit Room</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="HotelUser.Id" />
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.UserName"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.UserName" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.Firstname"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.Firstname" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.Firstname" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.Middlename"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.Middlename" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.Middlename" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.Lastname"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.Lastname" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.Lastname" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.PersonalInditification"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.PersonalInditification" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.PersonalInditification" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="HotelUser.DateOfEmployed"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="HotelUser.DateOfEmployed" class="form-control" />
+            </div>
+            <span asp-validation-for="HotelUser.DateOfEmployed" class="text-danger"></span>
+        </div>
+        <div>
+            <h4 class="text-center text-secondary">isActive?</h4>
+            <hr class="hr-2 bg-secondary w-75  mt-3" />
+            <div class="active-holder mt-3 d-flex justify-content-lg-around">
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="isActive" id="yes" value="true">
+                    <label class="form-check-label" asp-for="HotelUser.Isactive">Yes</label>
+                </div>
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="isActive" id="no" value="false">
+                    <label class="form-check-label" asp-for="HotelUser.Isactive">No</label>
+                </div>
+            </div>
+            <hr class="hr-2 bg-dark w-75 mt-3" />
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="RoomList/Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

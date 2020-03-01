@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>HotelReservationManager.Data.Models</id>
+    <version>1.0.0</version>
+    <authors>HotelReservationManager.Data.Models</authors>
+    <owners>HotelReservationManager.Data.Models</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.Extensions.Identity.Stores" version="3.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Documents\It Kariera depo\software engineering\Hotel Manager\HotelReservationManager\HotelReservationManager.Data.Models\bin\Debug\netcoreapp3.1\HotelReservationManager.Data.Models.dll" target="lib\netcoreapp3.1\HotelReservationManager.Data.Models.dll" />
+  </files>
+</package>

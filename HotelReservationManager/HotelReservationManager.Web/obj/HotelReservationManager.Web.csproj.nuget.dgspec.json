@@ -1,0 +1,297 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web\\HotelReservationManager.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj",
+        "projectName": "HotelReservationManager.Data.Models",
+        "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj",
+        "projectName": "HotelReservationManager.Data",
+        "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj",
+        "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj": {
+                "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\HotelReservationManager.Web.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\HotelReservationManager.Web.Models.csproj",
+        "projectName": "HotelReservationManager.Web.Models",
+        "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\HotelReservationManager.Web.Models.csproj",
+        "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj": {
+                "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data.Models\\HotelReservationManager.Data.Models.csproj"
+              },
+              "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj": {
+                "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web\\HotelReservationManager.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web\\HotelReservationManager.Web.csproj",
+        "projectName": "HotelReservationManager.Web",
+        "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web\\HotelReservationManager.Web.csproj",
+        "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj": {
+                "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Data\\HotelReservationManager.Data.csproj"
+              },
+              "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\HotelReservationManager.Web.Models.csproj": {
+                "projectPath": "D:\\Documents\\It Kariera depo\\software engineering\\Hotel Manager\\HotelReservationManager\\HotelReservationManager.Web.Models\\HotelReservationManager.Web.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
